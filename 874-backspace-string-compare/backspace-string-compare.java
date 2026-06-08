@@ -20,9 +20,6 @@ class Solution {
                 sb2.append(t.charAt(i));
             }
         }
-        System.out.println(sb1 + " " + sb2);
         return sb1.toString().equals(sb2.toString());
-       
-        
     }
 }
