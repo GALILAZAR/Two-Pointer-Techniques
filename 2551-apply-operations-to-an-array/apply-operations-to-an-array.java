@@ -9,21 +9,17 @@ class Solution {
             }
         }
 
-        int k = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-
-            if (nums[i] != 0) {
-                nums[k] = nums[i];
-                k++;
+        int [] result = new int[nums.length];
+        int p = 0;
+        for(int k = 0; k<nums.length; k++)
+        {
+            if(nums[k] != 0)
+            {
+                result[p] = nums[k];
+                p++;
             }
         }
 
-        while (k < nums.length) {
-            nums[k] = 0;
-            k++;
-        }
-
-        return nums;
+        return result;
     }
 }
