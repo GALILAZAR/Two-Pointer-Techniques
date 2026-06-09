@@ -6,8 +6,9 @@ class Solution {
         {   
             int temp = nums[i], length = 0;
             while(temp != 0){
-                 length++;
+                 
                 temp = temp / 10;
+                length++;
             }
             if(length % 2 == 0)
             {
