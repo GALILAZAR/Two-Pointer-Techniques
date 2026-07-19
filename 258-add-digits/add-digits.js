@@ -18,6 +18,10 @@ var addDigits = function(num) {
         }
         num = sum;
     }
+    if(num == 0)
+    {
+        return 0;
+    }
     return num;
     
 };
