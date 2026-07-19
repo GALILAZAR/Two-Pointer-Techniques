@@ -4,7 +4,7 @@
  */
 var pivotInteger = function(n) {
 
-    let right_side = ((n*n)+n) / 2;
+    let right_side = (n*(n+1))/2;
     let x =Math.floor( Math.sqrt(right_side));
 
     if(x*x === right_side)
