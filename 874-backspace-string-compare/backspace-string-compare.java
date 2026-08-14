@@ -16,6 +16,9 @@ class Solution {
                 {
                     stack1.pop();
                 }
+                else{
+                    continue;
+                }
             }
         }
         for(int i = 0; i<t.length(); i++)
