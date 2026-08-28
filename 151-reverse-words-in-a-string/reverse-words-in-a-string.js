@@ -13,6 +13,6 @@ var reverseWords = function(s) {
         arr[index] = str[i];
         index++;
      }
-     return arr.join(" ").trim()
+     return arr.join(" ")
     
 };
