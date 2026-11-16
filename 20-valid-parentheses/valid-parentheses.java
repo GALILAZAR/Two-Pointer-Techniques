@@ -5,6 +5,7 @@ class Solution {
         for(int i = 0; i<s.length(); i++)
         {
             char ch = s.charAt(i);
+
             if(ch == '(')
             {
                 stack.push(')');
@@ -17,7 +18,7 @@ class Solution {
             {
                 stack.push('}');
             }
-            else
+            else 
             {
                 if(stack.isEmpty() || stack.peek() != ch)
                 {
@@ -27,9 +28,9 @@ class Solution {
                 {
                     stack.pop();
                 }
-            }                                       // ()[]{}
-        }
-        return stack.isEmpty();
+            }
+        }  
+        return stack.isEmpty();      
         
     }
 }
